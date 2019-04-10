@@ -1,3 +1,4 @@
+# Database structure for uploading to MySQL
 import os
 
 
