@@ -3,10 +3,6 @@
 - This project automatically downloads all the SEC compiled financial statements from here: 
     - _https://www.sec.gov/dera/data/financial-statement-data-sets.html_
 
-
-## definitions/databases.py
-- Database structure for uploading to MySQL 
-
 ## definitions/log.py
 - Logging tool
 
@@ -20,6 +16,9 @@
 - Official table definitions from source
  
  
+ ## definitions/database.py
+- Database structure for uploading to MySQL 
+
  
 ## financial_statements_manager/download_data.py
 - Auto downloads financial statement zips from: 

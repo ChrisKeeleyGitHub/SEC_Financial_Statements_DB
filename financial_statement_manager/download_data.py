@@ -61,6 +61,7 @@ def _download_zips(missing_urls):
 
     downloaded_files = []
     for url in missing_urls:
+        logger.debug('Downloading {}/{} zips'.format(ix + 1, len(missing_urls)))
         file_name = url.split('/')[-1:][0]
         dest_path = zip_path + file_name
         urlretrieve(url_base + url, dest_path)

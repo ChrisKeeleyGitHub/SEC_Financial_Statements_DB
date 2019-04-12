@@ -4,7 +4,7 @@
 
 
 from definitions import sql_uploader
-from definitions import databases
+from financial_statement_manager import database
 from definitions import log
 
 
@@ -14,10 +14,10 @@ logger = log.get_logger()
 def main():
     logger.debug('Uploading data')
 
-    tblNUM = databases.dbSEC_FINANCIAL_STATEMENTS().tblNUM
-    tblPRE = databases.dbSEC_FINANCIAL_STATEMENTS().tblPRE
-    tblSUB = databases.dbSEC_FINANCIAL_STATEMENTS().tblSUB
-    tblTAG = databases.dbSEC_FINANCIAL_STATEMENTS().tblTAG
+    tblNUM = database.dbSEC_FINANCIAL_STATEMENTS().tblNUM
+    tblPRE = database.dbSEC_FINANCIAL_STATEMENTS().tblPRE
+    tblSUB = database.dbSEC_FINANCIAL_STATEMENTS().tblSUB
+    tblTAG = database.dbSEC_FINANCIAL_STATEMENTS().tblTAG
     tables = [tblNUM, tblPRE, tblSUB, tblTAG]
 
     for table in tables:
